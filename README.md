@@ -1,6 +1,6 @@
 # README
 
-![Ruby](https://img.shields.io/badge/Ruby-3.1.12-red)
+![Ruby](https://img.shields.io/badge/Ruby-3.2.4-red)
 ![Rails](https://img.shields.io/badge/Rails-7.1.3.3-red)
 
 
@@ -8,7 +8,7 @@ Este es un proyecto de inventario de productos.
 
 ## Requerimientos
 
-- Ruby 3.1.12
+- Ruby 3.2.4
 - Rails 7.1.3.3
 
 ## Instalación
@@ -38,6 +38,22 @@ rails db:migrate
 rails s
 ```
 
+## Recomendaciones
+
+- Eliminar el cache de la aplicación. Para lo cual se debe ejecutar el siguiente comando en una terminal con permisos de administrador:
+
+Windows (Estar en la ruta del proyecto):
+```bash
+del /s /q tmp\cache\assets\*
+```
+
+Linux (Estar en la ruta del proyecto):
+```bash
+rm -rf tmp/cache/assets/*
+```
+
+- Ejecutar el servidor desde una terminal con permisos de administrador.
+
 ## Uso
 
 Puedes acceder a la aplicación en [http://localhost:3000](http://localhost:3000)
@@ -48,4 +64,4 @@ Puedes acceder a la aplicación en [http://localhost:3000](http://localhost:3000
 
 ## Autor
 
-[Diego Saavedra](https://statick88.github.io)
+[Alejandro Andrade](https://mrbowis.github.io)
